@@ -1,5 +1,10 @@
 module.exports = {
   extends: ["eslint-config-react-app", "react-app"],
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaVersion: 11,
+    sourceType: "module",
+  },
   rules: {
     "object-curly-spacing": ["error", "always"],
     "no-trailing-spaces": ["error", { ignoreComments: true }],
